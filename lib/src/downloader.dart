@@ -26,7 +26,7 @@ class FlutterDownloader {
   static bool _initialized = false;
 
   static Future<Null> initialize() async {
-    assert(!_initialized, 'FlutterDownloader.initialize() must be called only once!');
+    //assert(!_initialized, 'FlutterDownloader.initialize() must be called only once!');
 
     final callback = PluginUtilities.getCallbackHandle(callbackDispatcher);
     await _channel
